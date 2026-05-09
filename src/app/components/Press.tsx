@@ -39,7 +39,7 @@ export function Press() {
             className="flex gap-20 items-center justify-around whitespace-nowrap min-w-full"
             animate={{ x: ["0%", "-50%"] }}
             transition={{
-              duration: isMobile ? 0.8 : 25,
+              duration: isMobile ? 0.25 : 25,
               ease: "linear",
               repeat: Infinity,
             }}
