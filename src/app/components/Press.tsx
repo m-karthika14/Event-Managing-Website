@@ -11,6 +11,9 @@ const services = [
 
 export function Press() {
   const isMobile = useIsMobile();
+  const desktopDuration = 25;
+  const mobileDuration = 1.5;
+  const duration = isMobile ? mobileDuration : desktopDuration;
 
   return (
     <div className="-mt-[4cm] py-20 px-6 bg-[#0B1320] border-t border-b border-[#D4AF37]/10 relative overflow-hidden">
@@ -37,9 +40,10 @@ export function Press() {
         >
           <motion.div
             className="flex gap-20 items-center justify-around whitespace-nowrap min-w-full"
+            key={isMobile ? 'mobile' : 'desktop'}
             animate={{ x: ["0%", "-50%"] }}
             transition={{
-              duration: isMobile ? 0.25 : 25,
+              duration,
               ease: "linear",
               repeat: Infinity,
             }}
