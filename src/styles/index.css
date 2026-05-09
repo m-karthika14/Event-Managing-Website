@@ -1,0 +1,12 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+@import './carousel.css';
+
+/* Disable transitions and animations for pages with the `no-transitions` class (Home page) */
+.no-transitions *,
+.no-transitions *::before,
+.no-transitions *::after {
+	transition: none !important;
+	animation: none !important;
+}

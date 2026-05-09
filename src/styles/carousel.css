@@ -1,0 +1,61 @@
+/* Custom Slick Carousel Styles */
+
+/* Dots customization */
+.slick-dots {
+  bottom: 30px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: white;
+  opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: white;
+}
+
+/* Remove default arrow styles since we're using arrows: false */
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+
+/* Smooth transitions */
+.slick-slide {
+  transition: all 0.3s ease;
+}
+
+.slick-track {
+  display: flex;
+  align-items: stretch;
+}
+
+.slick-slide > div {
+  height: 100%;
+}
+
+/* Custom dots for reviews slider */
+.slick-dots li {
+  margin: 0 4px;
+}
+
+.slick-dots li button {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+}
+
+.slick-dots li button:before {
+  width: 8px;
+  height: 8px;
+  content: '';
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* Vertical slider adjustments */
+.slick-vertical .slick-slide {
+  border: none;
+}
